@@ -1,8 +1,8 @@
-{% extends "base.html" %}
+{% raw %}{% extends "base.html" %}{% endraw %}
 
-{% block title %}Contact - {{ cookiecutter.project_name }}{% endblock %}
+{% raw %}{% block title %}{% endraw %}Contact - {{ cookiecutter.project_name }}{% raw %}{% endblock %}{% endraw %}
 
-{% block content %}
+{% raw %}{% block content %}{% endraw %}
 <h1>Contact Us</h1>
 <p class="lead">Get in touch with us.</p>
 
@@ -33,4 +33,4 @@
         </form>
     </div>
 </div>
-{% endblock %}
+{% raw %}{% endblock %}{% endraw %}

@@ -1,14 +1,14 @@
-{% extends "base.html" %}
+{% raw %}{% extends "base.html" %}{% endraw %}
 
-{% block title %}Home - {{ cookiecutter.project_name }}{% endblock %}
+{% raw %}{% block title %}{% endraw %}Home - {{ cookiecutter.project_name }}{% raw %}{% endblock %}{% endraw %}
 
-{% block content %}
+{% raw %}{% block content %}{% endraw %}
 <div class="text-center my-5">
     <h1>Welcome to {{ cookiecutter.project_name }}</h1>
     <p class="lead">{{ cookiecutter.project_short_description }}</p>
     <hr class="my-4">
     <p>This is a Flask application using the Application Factory pattern with Blueprints.</p>
-    <a href="{{ url_for('main.about') }}" class="btn btn-primary">Learn More</a>
+    <a href="{% raw %}{{ url_for('main.about') }}{% endraw %}" class="btn btn-primary">Learn More</a>
 </div>
 
 <div class="row mt-5">
@@ -22,7 +22,7 @@
     </div>
     <div class="col-md-4">
         <h3>API Ready</h3>
-        <p>Sample API endpoints at <a href="{{ url_for('main.api_users') }}">/api/users</a></p>
+        <p>Sample API endpoints at <a href="{% raw %}{{ url_for('main.api_users') }}{% endraw %}">/api/users</a></p>
     </div>
 </div>
-{% endblock %}
+{% raw %}{% endblock %}{% endraw %}
