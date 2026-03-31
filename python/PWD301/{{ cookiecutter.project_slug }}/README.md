@@ -1,7 +1,5 @@
 # {{ cookiecutter.project_name }}
 
-> {{ cookiecutter.project_short_description }}
-
 ## 🚀 Overview
 This Flask project was generated using a professional template with Application Factory pattern and Blueprints architecture.
 
@@ -76,7 +74,4 @@ SECRET_KEY=your-secret-key
 - `/api/posts` - Posts API endpoint
 
 ---
-**Author**: {{ cookiecutter.full_name }} (<{{ cookiecutter.email }}>)  
-**GitHub**: [{{ cookiecutter.github_username }}](https://github.com/{{ cookiecutter.github_username }})  
-**License**: {{ cookiecutter.license }}  
 **Version**: {{ cookiecutter.version }}

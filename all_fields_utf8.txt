@@ -1,0 +1,8 @@
+﻿[D:\project-template\project-template\C\cookiecutter.json] : project_slug, author, github_username
+[D:\project-template\project-template\Cpp\cookiecutter.json] : project_slug, cpp_standard, author
+[D:\project-template\project-template\java\ant\PRJ301-template\cookiecutter.json] : project_name, group_id, main_servlet_name, context_path, build_system, project_slug, group_id_path, context_path_slug
+[D:\project-template\project-template\java\ant\PRO192-template\cookiecutter.json] : project_name, group_id, main_filename, author, github_username, build_system, project_slug, group_id_path
+[D:\project-template\project-template\java\maven\PRJ301-template\cookiecutter.json] : project_name, group_id, main_servlet_name, context_path, project_slug, group_id_path, artifact_id, context_path_slug
+[D:\project-template\project-template\java\maven\PRO192-template\cookiecutter.json] : project_name, group_id, main_filename, author, github_username, build_system, java_version, project_slug, artifact_id, group_id_path
+[D:\project-template\project-template\python\PFP191\cookiecutter.json] : full_name, github_username, project_name, project_slug, pkg_name, project_short_description, python_version, license, use_docker, email, version, actual_python_path, course
+[D:\project-template\project-template\python\PWD301\cookiecutter.json] : full_name, email, github_username, project_name, project_slug, pkg_name, project_short_description, version, actual_python_path, python_version, license, use_docker

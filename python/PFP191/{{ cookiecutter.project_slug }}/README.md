@@ -1,7 +1,5 @@
 # {{ cookiecutter.project_name }}
 
-> {{ cookiecutter.project_short_description }}
-
 ## 🚀 Overview
 This project was generated using a professional Python template designed for VS Code environments. It includes pre-configured tools for linting, formatting, and testing.
 
@@ -43,7 +41,4 @@ We use pytest for testing.
 - .env/: Environment variables (not tracked by Git).
 
 ---
-* **Author**: {{ cookiecutter.full_name }} (<{{ cookiecutter.email }}>)
-* **GitHub**: [{{ cookiecutter.github_username }}](https://github.com/{{ cookiecutter.github_username }})
-* **License**: {{ cookiecutter.license }}
-* **Version**: {{ cookiecutter.version }}
+**Version**: {{ cookiecutter.version }}

@@ -15,7 +15,6 @@ def test_run_app_output(capsys):
     
     # Check if the expected strings are in the output
     assert "Welcome to {{ cookiecutter.project_name }}!" in captured.out
-    assert "Developed by: {{ cookiecutter.full_name }}" in captured.out
 
 def test_main_execution_logic():
     """

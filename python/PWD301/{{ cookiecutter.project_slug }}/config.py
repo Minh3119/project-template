@@ -7,19 +7,19 @@ class Config:
     APP_VERSION = '1.0.0'
     DEBUG = False
     TESTING = False
-    
+
     MAIL_SERVER = os.environ.get('MAIL_SERVER') or 'localhost'
     MAIL_PORT = int(os.environ.get('MAIL_PORT') or 587)
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS', 'true').lower() in ['true', 'on', '1']
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    
+
     POSTS_PER_PAGE = 10
     USERS_PER_PAGE = 20
     MAX_CONTENT_LENGTH = 16 * 1024 * 1024
     UPLOAD_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'uploads')
     PERMANENT_SESSION_LIFETIME = 1800
-    
+
     @staticmethod
     def init_app(app):
         pass
@@ -30,7 +30,7 @@ class DevelopmentConfig(Config):
     DEVELOPMENT = True
     FLASK_ENV = 'development'
     SECRET_KEY = 'dev-secret-key-not-secure'
-    
+
     @staticmethod
     def init_app(app):
         Config.init_app(app)
@@ -42,7 +42,7 @@ class TestingConfig(Config):
     TESTING = True
     DEBUG = True
     WTF_CSRF_ENABLED = False
-    
+
     @staticmethod
     def init_app(app):
         Config.init_app(app)
@@ -52,20 +52,20 @@ class ProductionConfig(Config):
     DEBUG = False
     TESTING = False
     FLASK_ENV = 'production'
-    
+
     SESSION_COOKIE_SECURE = True
     SESSION_COOKIE_HTTPONLY = True
     SESSION_COOKIE_SAMESITE = 'Lax'
-    
+
     @staticmethod
     def init_app(app):
         Config.init_app(app)
         import logging
         from logging.handlers import RotatingFileHandler
-        
+
         if not os.path.exists('logs'):
             os.mkdir('logs')
-        
+
         file_handler = RotatingFileHandler('logs/app.log', maxBytes=10240000, backupCount=10)
         file_handler.setFormatter(logging.Formatter(
             '%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'
